@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação - Logística Academy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #e0f2fe 0%, #b3e5fc 50%, #81d4fa 100%);
+      margin: 0;
+      padding: 0;
+      color: #0d47a1;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(circle at 20% 20%, rgba(25, 118, 210, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.3) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+      padding: 1.2rem 2rem;
+      border-bottom: 3px solid #1976d2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(25, 118, 210, 0.15);
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #0d47a1;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, #1976d2, #42a5f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .back-button {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+      background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+      padding: 0.6rem 1.4rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
+    }
+
+    .back-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(25, 118, 210, 0.4);
+      background: linear-gradient(135deg, #1565c0 0%, #1e88e5 100%);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      position: relative;
+      z-index: 5;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 2.5rem;
+      background: linear-gradient(135deg, #0d47a1 0%, #1976d2 50%, #42a5f5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 800;
+      text-shadow: 0 4px 8px rgba(13, 71, 161, 0.1);
+    }
+
+    /* Accordion */
+    .accordion-item {
+      background: #ffffff;
+      border-radius: 18px;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 8px 28px rgba(25, 118, 210, 0.15);
+      overflow: hidden;
+      border: 2px solid rgba(25, 118, 210, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .accordion-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 36px rgba(25, 118, 210, 0.25);
+      border-color: rgba(25, 118, 210, 0.25);
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.4rem 1.8rem;
+      font-size: 1.3rem;
+      font-weight: 700;
+      cursor: pointer;
+      background: linear-gradient(135deg, #f8faff, #ffffff);
+      color: #0d47a1;
+      transition: background 0.3s;
+    }
+
+    .accordion-header:hover {
+      background: #f1f7ff;
+    }
+
+    .accordion-arrow {
+      transition: transform 0.3s ease;
+      font-size: 1.2rem;
+      color: #1976d2;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, padding 0.3s ease;
+      padding: 0 1.8rem;
+    }
+
+    .accordion-content.open {
+      padding: 1.5rem 1.8rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 420px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(25, 118, 210, 0.15);
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .accordion-header { font-size: 1.1rem; }
+      iframe { height: 280px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Conecta <span class="highlight">Logística</span></div>
+    <a href="../ecompras.html" class="back-button">← Voltar</a>
+  </header>
+
+  <div class="container">
+    <h1>Processos de Avaliação</h1>
+
+    <!-- Item 1 -->
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Como fazer avaliação
+        <span class="accordion-arrow">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p>Explicação sobre o processo de avaliação.</p>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Explicando avaliação
+        <span class="accordion-arrow">▼</span>
+      </div>
+      <div class="accordion-content">
+        <p>Mais detalhes sobre avaliação.</p>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach(header => {
+      header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+        const arrow = header.querySelector(".accordion-arrow");
+
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          content.classList.remove("open");
+          arrow.style.transform = "rotate(0deg)";
+        } else {
+          document.querySelectorAll(".accordion-content").forEach(c => {
+            c.style.maxHeight = null;
+            c.classList.remove("open");
+            c.previousElementSibling.querySelector(".accordion-arrow").style.transform = "rotate(0deg)";
+          });
+
+          content.style.maxHeight = content.scrollHeight + "px";
+          content.classList.add("open");
+          arrow.style.transform = "rotate(180deg)";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
